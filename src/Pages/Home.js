@@ -114,7 +114,7 @@ function Home() {
                                     </ul>
                                 </div>
 
-                                <button id='marketingGallery'>انظر للمزيد</button>
+                                <a href="Design"><button>انظر للمزيد</button> </a>
                             </div>
                         </div>
 
@@ -211,7 +211,7 @@ function Home() {
                                 <img src={require('../Images/client4.jpeg')} />
                                 <h3 className='name'>بإدارة منال رابي</h3>
                             </div>
-                            <p className='fb'>ذوق راق ورائع عمل فوري وسريع واسعار منافسة انصح بشدة ، كل التوفيق لكم</p>
+                            <p className='fb'>تصاميم مرتبة جدا</p>
                         </div>
 
                         <div className='feedback'>
@@ -219,7 +219,7 @@ function Home() {
                                 <img src={require('../Images/client5.jpeg')} />
                                 <h3 className='name'>بإدارة يوسف جرن</h3>
                             </div>
-                            <p className='fb'>ذوق راق ورائع عمل فوري وسريع واسعار منافسة انصح بشدة ، كل التوفيق لكم</p>
+                            <p className='fb'>تصاميم و تسويق ابداع و احتراف, شكرا</p>
                         </div>
 
                         <div className='feedback'>
@@ -235,7 +235,7 @@ function Home() {
                                 <img src={require('../Images/client7.jpeg')} />
                                 <h3 className='name'>بإدارة ابو القاسم</h3>
                             </div>
-                            <p className='fb'>عمل جيد جدا!</p>
+                            <p className='fb'>شغل بجنن شكرا كتير</p>
                         </div>
                     </div>
                 </div>
