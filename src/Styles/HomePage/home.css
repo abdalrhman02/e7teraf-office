@@ -1,0 +1,536 @@
+.landing {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  height: 100vh;
+}
+.landing .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 2.5em 7em;
+  margin: 2.5em 6em;
+  height: 37.5em;
+}
+.landing .container .text .subTitle {
+  font-size: 24px;
+  background-color: rgba(242, 209, 0, 0.4901960784);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.landing .container .text .mainTitle {
+  font-size: 42px;
+  max-width: 12em;
+  margin: 20px 0 30px;
+}
+.landing .container .text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  max-width: 500px;
+  margin-bottom: 20px;
+  color: #626262;
+}
+.landing .container .text button {
+  width: 8em;
+  height: 2.5em;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: var(--f-color);
+  cursor: pointer;
+}
+.landing .container .text button:hover {
+  opacity: 0.9;
+}
+.landing .container .text ul {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.landing .container .text ul i {
+  font-size: 23px;
+  transition: var(--transition);
+}
+.landing .container .text ul i:hover {
+  transform: scale(1.05) rotate(5deg);
+  cursor: pointer;
+}
+.landing .container .image {
+  position: relative;
+  z-index: 1;
+}
+.landing .container .image img {
+  width: 27em;
+}
+.landing .container .image .shape {
+  background-color: #f9e882;
+  width: 22em;
+  height: 21em;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-top-left-radius: 12em;
+  border-top-right-radius: 4em;
+}
+.landing .container .image .name-logo {
+  position: absolute;
+  right: 22em;
+  top: 3em;
+  width: 11em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .container .image .name-logo .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .container .image .name-logo .name h2 {
+  font-size: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.landing .container .image .name-logo .logo {
+  width: 10em;
+  top: -5.5em;
+  left: -11px;
+}
+.landing .callUs {
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #FFF;
+  padding: 10px 15px 10px 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 2px solid #0a4a75;
+  transition: var(--transition);
+}
+.landing .callUs i {
+  margin-right: 10px;
+  background: linear-gradient(26deg, #0a4a75, #4c8ab4, #b3e0ff);
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.landing .callUs .number h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.services .container {
+  padding: 3em 6em;
+}
+.services .container .title h1 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.services .container .title h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  width: 30%;
+  height: 28px;
+  z-index: -1;
+}
+.services .container .service {
+  display: flex;
+  justify-content: space-between;
+  margin: 5em 0;
+}
+.services .container .service .text {
+  width: 50%;
+}
+.services .container .service .text .title {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.services .container .service .text .title h2 {
+  font-size: 3.3em;
+}
+.services .container .service .text .title h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.services .container .service .text .desc {
+  margin-top: -7px;
+}
+.services .container .service .text .desc p {
+  margin-top: 0.8em;
+  max-width: 600px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+.services .container .service .text .desc ul {
+  list-style: disc;
+  width: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em 4em;
+  margin-top: 18px;
+  padding-right: 18px;
+  font-weight: 300;
+}
+.services .container .service .text .desc .features {
+  margin-top: 15px;
+}
+.services .container .service .text .desc .features h4 {
+  margin-bottom: -6px;
+}
+.services .container .service .text .desc button {
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  color: #FFF;
+  width: 10em;
+  height: 2.7em;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.services .container .service .text .desc button:hover {
+  cursor: pointer;
+  background: linear-gradient(26deg, #1779ba, #3e799f);
+}
+.services .container .service .image img {
+  width: 28em;
+  transition: var(--transition);
+}
+.services .container .service .image img:hover {
+  transform: scale(1.05) rotate(3deg);
+}
+.services .container .serviceDivNoti {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5019607843);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.services .container .serviceDivNoti .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 56%;
+  height: 88%;
+  border-radius: 5px;
+  overflow: auto;
+}
+.services .container .serviceDivNoti .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.services .container .serviceDivNoti .container .title h2 {
+  font-size: 30px;
+  background-color: rgba(242, 209, 0, 0.4901960784);
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.services .container .serviceDivNoti .container .title h3 {
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 500px;
+}
+.services .container .serviceDivNoti .container .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0 120px;
+}
+.services .container .serviceDivNoti .container .carousel i {
+  position: relative;
+  font-size: 34px;
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  color: #FFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.services .container .serviceDivNoti .container .carousel i::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.services .container .serviceDivNoti .container .carousel i:hover {
+  background: linear-gradient(26deg, #1779ba, #3e799f);
+}
+.services .container .serviceDivNoti .container .carousel .post img {
+  display: none;
+  width: 30em;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+.services .container .serviceDivNoti .container .carousel .post img.active {
+  display: flex;
+}
+.services .container .serviceDivNoti .container .proofs h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.services .container .serviceDivNoti .container .proofs h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  width: 101%;
+  height: 28px;
+  z-index: -1;
+}
+.services .container .serviceDivNoti .container .proofs .pImages {
+  text-align: center;
+  margin-top: 40px;
+}
+.services .container .serviceDivNoti .container .proofs .pImages img {
+  width: 40em;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+.services .container .serviceDivNoti .container .exit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.customers {
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+}
+.customers .container {
+  text-align: center;
+  padding: 3em 6em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.customers .container .title {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customers .container .title .number {
+  font-size: 5em;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.customers .container .title .number::after {
+  content: "";
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  width: 110%;
+  height: 25px;
+  z-index: -1;
+}
+.customers .container .title p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.customers .container .feedbacks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  margin-top: 5em;
+  width: 100%;
+}
+.customers .container .feedbacks .feedback {
+  position: relative;
+  background-color: #FFF;
+  padding: 1em;
+  width: 30%;
+  height: 14em;
+  border-radius: 10px;
+}
+.customers .container .feedbacks .feedback .person {
+  margin-top: -72px;
+}
+.customers .container .feedbacks .feedback .person img {
+  width: 6.5em;
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+.customers .container .feedbacks .feedback p {
+  margin-top: 35px;
+  line-height: 1.8em;
+  color: #434343;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  padding: 7em;
+}
+.contact .container .formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(35deg, var(--f-color), #0763a0);
+  color: #fff;
+  width: 45%;
+  padding: 26px;
+  border-radius: 5px;
+}
+.contact .container .formContainer .title {
+  text-align: center;
+}
+.contact .container .formContainer .title h1 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+.contact .container .formContainer .title h1::after {
+  content: "";
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  width: 42%;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact .container .formContainer form {
+  display: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+  margin-top: 0.6em;
+}
+.contact .container .formContainer form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 2em;
+}
+.contact .container .formContainer form div div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.contact .container .formContainer form div label {
+  display: block;
+}
+.contact .container .formContainer form div input {
+  width: 100%;
+}
+.contact .container .formContainer form label {
+  margin: 15px 0 6px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+.contact .container .formContainer form input {
+  height: 3.1em;
+  width: 32em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+.contact .container .formContainer form textarea {
+  height: 10em;
+  padding: 10px 10px 0 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.contact .container .formContainer form button {
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  margin-top: 20px;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+}
+.contact .container .formContainer form button:hover {
+  cursor: pointer;
+  background: linear-gradient(26deg, #f4a718, #f8d702);
+}
+
+footer {
+  background-color: var(--f-color);
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding: 12px 0;
+}
+footer .socials li a i {
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+}
+footer .socials li a i::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  color: #fff;
+  background: #0b3856;
+  padding: 12px 0;
+}/*# sourceMappingURL=home.css.map */
