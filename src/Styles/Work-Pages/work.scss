@@ -11,33 +11,38 @@
         
     
         .bar {
-            background: linear-gradient(26deg, #0a4a75, #3e799f);
-            padding: 2em;
-            color: #Fff;
-    
-            img {
-                width: 9em;
-                margin: -2.5em 0 -1em 0;
-            }
-    
-            h2 {
-                margin-bottom: 20px;
-            }
-    
-            .ourWork {
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 2em;
-    
-                a {
-                    color: #fff;
-                    padding: 8px 16px;
-                    border-radius: 5px;
-                    background: linear-gradient(26deg, var(--t-color), var(--s-color));
-    
-                    &:hover {
-                        background: linear-gradient(26deg, #fbda02, #feaa0f)
+            height: 100%;
+            background: linear-gradient(26deg, #0a4a75, #367ba7);
+
+            .barContent {
+                position: fixed;
+                padding: 2em;
+                color: #fff;
+        
+                img {
+                    width: 9em;
+                    margin: -2.5em 0 -1em 0;
+                }
+        
+                h2 {
+                    margin-bottom: 20px;
+                }
+        
+                .ourWork {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 2em;
+        
+                    a {
+                        color: #fff;
+                        padding: 8px 16px;
+                        border-radius: 5px;
+                        background: linear-gradient(26deg, var(--t-color), var(--s-color));
+        
+                        &:hover {
+                            background: linear-gradient(26deg, #fbda02, #feaa0f)
+                        }
                     }
                 }
             }
@@ -67,54 +72,73 @@
                 }
             }
 
-            .carousel {
+            // .carousel {
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     margin-top: 8em;
+
+            //     .fa-arrow-right, .fa-arrow-left {
+            //         position: relative;
+            //         font-size: 32px;
+            //         background: linear-gradient(26deg, #0a4a75, #3e799f);
+            //         color: #fff;
+            //         width: 1.4em;
+            //         height: 1.4em;
+            //         border-radius: 50%;
+
+            //         &::before {
+            //             position: absolute;
+            //             left: 50%;
+            //             top: 50%;
+            //             transform: translate(-50%, -50%);
+            //             cursor: pointer;
+            //         }
+            //     }
+
+            //     .fa-arrow-right {
+
+            //     }
+            //     .fa-arrow-left {
+
+            //     }
+
+
+            //     .post {
+            //         margin: 0 4em;
+
+            //         img {
+            //             display: none;
+            //             width: 23em;
+            //             border: 1.5px solid black;
+            //             border-radius: 7px;
+
+            //             &.active {
+            //                 display: block;
+            //             }
+            //         }
+            //     }
+            // }
+
+            .examples {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-                margin-top: 8em;
+                gap: 2em;
+                margin-top: 5em;
 
-                .fa-arrow-right, .fa-arrow-left {
-                    position: relative;
-                    font-size: 32px;
-                    background: linear-gradient(26deg, #0a4a75, #3e799f);
-                    color: #fff;
-                    width: 1.4em;
-                    height: 1.4em;
-                    border-radius: 50%;
+                img {
+                    width: 22em;
+                    transition: var(--transition);
+                    border: 1.5px solid black;
+                    border-radius: 7px;
 
-                    &::before {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                        cursor: pointer;
-                    }
-                }
-
-                .fa-arrow-right {
-
-                }
-                .fa-arrow-left {
-
-                }
-
-
-                .post {
-                    margin: 0 4em;
-
-                    img {
-                        display: none;
-                        width: 23em;
-                        border: 1.5px solid black;
-                        border-radius: 7px;
-
-                        &.active {
-                            display: block;
-                        }
+                    &:hover {
+                        transform: scale(1.03)
                     }
                 }
             }
-
 
             .more {
                 margin-top: 5em;
@@ -143,4 +167,75 @@
             }
         }
     }
+}
+
+
+@media (max-width: 1100px) {
+
+    .gallery .container .content .examples {
+        margin-top: 7em;
+    }
+
+    .gallery .container .content .examples img {
+        width: 19em;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .gallery .container .content .more .imgs img {
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .gallery .container {
+        display: block;
+    }
+
+    .gallery .container .bar {
+        height: fit-content;
+        padding-bottom: 2em;
+    }
+
+    .gallery .container .bar .barContent {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    .gallery .container .bar .barContent h2 {
+        // margin-bottom: 0;
+    }
+
+    .gallery .container .bar .barContent img {
+        margin:0;
+    }
+
+    .gallery .container .bar .barContent .ourWork {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .gallery .container .content .title h2 {
+        font-size: 21px
+    }
+
+    .gallery .container .content .more h2 {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .gallery .container .content .more .imgs img {
+        width: 80%;
+    }
+
 }

@@ -25,13 +25,15 @@ function Design() {
             <div className="container">
                 
                 <div className="bar">
-                    <img src={require('../../Images/logo1.png')} />
-                    <h2>بعض من اعمالنا</h2>
-                    <div className="ourWork">
-                        <a href='Design'>التصميم</a>
-                        <a href='#'>التسويق</a>
-                        <a href='Rights'>تحصيل الحقوق</a>
-                        <a href='#'>بناء المواقع</a>
+                    <div className='barContent'>
+                        <img src={require('../../Images/logo1.png')} />
+                        <h2>بعض من اعمالنا</h2>
+                        <div className="ourWork">
+                            <a href='Design'>التصميم</a>
+                            <a href='#'>التسويق</a>
+                            <a href='Rights'>تحصيل الحقوق</a>
+                            <a href='#'>بناء المواقع</a>
+                        </div>
                     </div>
                 </div>
 
@@ -41,7 +43,7 @@ function Design() {
                         <h2>اعمالنا من تصميم البوستات و الاعلانات</h2>
                     </div>
 
-                    <div className='carousel'>
+                    {/* <div className='carousel'>
                         <i class="fa-solid fa-arrow-right"></i>
 
                         <div className='post'>
@@ -59,6 +61,20 @@ function Design() {
                         </div>
 
                         <i class="fa-solid fa-arrow-left"></i>
+                    </div> */}
+
+                    <div className='examples'>
+                        <img src={require('../../Images/design-gallery/1.jpeg')} />
+                        <img src={require('../../Images/design-gallery/2.jpeg')} />
+                        <img src={require('../../Images/design-gallery/3.jpeg')} />
+                        <img src={require('../../Images/design-gallery/4.jpeg')} />
+                        <img src={require('../../Images/design-gallery/5.jpeg')} />
+                        <img src={require('../../Images/design-gallery/6.jpeg')} />
+                        <img src={require('../../Images/design-gallery/7.jpeg')} />
+                        <img src={require('../../Images/design-gallery/8.jpeg')} />
+                        <img src={require('../../Images/design-gallery/9.jpeg')} />
+                        <img src={require('../../Images/design-gallery/10.jpeg')} />
+                        <img src={require('../../Images/design-gallery/11.jpeg')} />
                     </div>
 
                     <div className='more'>

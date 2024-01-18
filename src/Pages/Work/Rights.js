@@ -3,34 +3,36 @@ import {  useState, useEffect} from 'react';
 
 function Rights() {
     
-    // For Images Slide
-    let [postImgsCounting, setPostImgsCounting] = useState(5);
-    let postImages = document.querySelectorAll('.carousel .post img');
+    // // For Images Slide
+    // let [postImgsCounting, setPostImgsCounting] = useState(5);
+    // let postImages = document.querySelectorAll('.carousel .post img');
 
-    useEffect(() => {
-        postImages.forEach((p) => {
-            p.classList.remove('active')
+    // useEffect(() => {
+    //     postImages.forEach((p) => {
+    //         p.classList.remove('active')
         
-            if(p.id == postImgsCounting) {
-                p.classList.add('active')
-            }
-        });
-    }, [postImgsCounting]);
+    //         if(p.id == postImgsCounting) {
+    //             p.classList.add('active')
+    //         }
+    //     });
+    // }, [postImgsCounting]);
 
-    function nextPost() { setPostImgsCounting((prevCount) => (prevCount < postImages.length ? prevCount + 1 : prevCount)); };
-    function prevPost() { setPostImgsCounting((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount)); };
+    // function nextPost() { setPostImgsCounting((prevCount) => (prevCount < postImages.length ? prevCount + 1 : prevCount)); };
+    // function prevPost() { setPostImgsCounting((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount)); };
 
     return (
         <div className="gallery rightsGallery">
             <div className='container'>
                 <div className="bar">
-                    <img src={require('../../Images/logo1.png')} />
-                    <h2>بعض من اعمالنا</h2>
-                    <div className="ourWork">
-                        <a href='Design'>التصميم</a>
-                        <a href='#'>التسويق</a>
-                        <a href='Rights'>تحصيل الحقوق</a>
-                        <a href='#'>بناء المواقع</a>
+                    <div className='barContent'>
+                        <img src={require('../../Images/logo1.png')} />
+                        <h2>بعض من اعمالنا</h2>
+                        <div className="ourWork">
+                            <a href='Design'>التصميم</a>
+                            <a href='#'>التسويق</a>
+                            <a href='Rights'>تحصيل الحقوق</a>
+                            <a href='#'>بناء المواقع</a>
+                        </div>
                     </div>
                 </div>
 
@@ -39,7 +41,7 @@ function Rights() {
                         <h2>تحصيل الحقوق من التأمين الوطني</h2>
                     </div>
 
-                    <div className='carousel'>
+                    {/* <div className='carousel'>
                         <i class="fa-solid fa-arrow-right" onClick={nextPost}></i>
 
                         <div className='post'>
@@ -60,6 +62,23 @@ function Rights() {
                         </div>
 
                         <i class="fa-solid fa-arrow-left" onClick={prevPost}></i>
+                    </div> */}
+
+                    <div className='examples'>
+                        <img src={require('../../Images/rights-gallery/1.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/2.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/3.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/4.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/5.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/6.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/7.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/8.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/9.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/10.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/11.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/12.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/13.jpeg')} />
+                        <img src={require('../../Images/rights-gallery/14.jpeg')} />
                     </div>
 
                     <div className='more'>

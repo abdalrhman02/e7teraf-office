@@ -133,7 +133,7 @@ function Home() {
                             <div className='desc'>
                                 <p>مكتبنا يقدم خدمة الإستشارة بما يتعلق بقضايا التأمين الوطني وتحصيل الحقوق وحل القضايا ضمن طاقم مؤهل ومهني</p>  
                             
-                                <button id='rightsGallery'>انظر للمزيد</button>
+                                <a href='Rights'><button>انظر للمزيد</button></a>
                             </div>
                         </div>
 
