@@ -152,7 +152,7 @@ function Home() {
                     </div>
 
                     <div className='service marketing' dir='ltr'>
-                        <div className='text' style={{width: '47%'}} dir='rtl'>
+                        <div className='text' dir='rtl'>
                             <div className='title'>
                                 <h2>02 /</h2>
                                 <h3>التسويق</h3>
@@ -199,7 +199,7 @@ function Home() {
                     </div>
 
                     <div className='service website' dir='ltr'>
-                        <div className='text' style={{width: '47%'}} dir='rtl'>
+                        <div className='text' dir='rtl'>
                             <div className='title'>
                                 <h2>04 /</h2>
                                 <h3>بناء مواقع</h3>
@@ -376,7 +376,7 @@ function Home() {
                     <div className='formContainer'>
                         <div className='title'>
                             <h1>تواصل معنا</h1>
-                            <p>سوف نرد على رسالتك في اقرب وقت ممكن!</p>
+                            <p>اترك تفاصيلك و سوف نعود لك في اقرب وقت ممكن</p>
                         </div>
 
                         <form action="https://formsubmit.co/mohamed96sh@gmail.com" method="POST">
