@@ -1,0 +1,124 @@
+.galleryPagetitle {
+  text-align: center;
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  padding: 2em 0;
+}
+.galleryPagetitle h2 {
+  position: relative;
+  margin-bottom: 1.5em;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+}
+.galleryPagetitle ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.galleryPagetitle ul li {
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #fff;
+}
+.galleryPagetitle ul li:hover {
+  background: linear-gradient(26deg, #feb01c, #ffdc00);
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+.container .main {
+  text-align: center;
+}
+.container .main img {
+  width: 33em;
+}
+.container .gallery {
+  display: none;
+  margin-top: 2em;
+}
+.container .gallery.active {
+  display: block;
+}
+.container .gallery .galleryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .gallery .galleryTitle h2 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.container .gallery .galleryTitle h2::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  border-radius: 4px;
+}
+.container .gallery .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+.container .gallery .carousel .fa-arrow-right, .container .gallery .carousel .fa-arrow-left {
+  font-size: 30px;
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.container .gallery .carousel .fa-arrow-right::before, .container .gallery .carousel .fa-arrow-left::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .gallery .carousel .post {
+  margin: 0 6em;
+}
+.container .gallery .carousel .post img {
+  display: none;
+  width: 25em;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+.container .gallery .carousel .post img.active {
+  display: block;
+}
+.container .rightsGallery .proofs {
+  margin: 8em 0 4em 0;
+}
+.container .rightsGallery .proofs h2 {
+  padding-right: 2em;
+  margin-bottom: 2em;
+}
+.container .rightsGallery .proofs .pImages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+.container .rightsGallery .proofs .pImages img {
+  width: 55%;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+.container footer {
+  position: absolute;
+  bottom: -5em;
+  width: 100%;
+}/*# sourceMappingURL=work.css.map */

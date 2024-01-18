@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Home() {
-    const { t, i18n } = useTranslation();
 
     // For call us notifaction
     let callUsOpen = () => {
@@ -19,65 +18,6 @@ function Home() {
         callUsElement.classList.add('callUsClosed');
         callUsElement.classList.remove('callUsOpen');
     }
-
-    
-    /* Services Galleries Windows */
-
-    // For Select Services Buttons
-    let serviceNoti = document.querySelectorAll('.services .container .serviceDivNoti');
-    let servicesButtons = document.querySelectorAll('.services .container .service button')
-
-    servicesButtons.forEach((ser) => {
-        ser.addEventListener('click', () => {
-            serviceNoti.forEach((serNoti) => {
-                if(serNoti.classList.contains(ser.id)) {
-                    serNoti.style.display = 'block'
-                } else {
-                    serNoti.style.display = 'none'
-                };
-            });
-        });
-    });
-
-
-
-    // For Close The Window
-    let exitServiceNoti = document.querySelectorAll('#exitWindow');
-
-    exitServiceNoti.forEach((exit) => {
-        exit.addEventListener('click', () => {
-            exit.parentElement.parentElement.style.display = 'none'
-        })
-    })
-
-    // function exitSerNoti() {
-    //     let exit = exitServiceNoti.parentElement.parentElement
-    //     exit.style.display = 'none'
-    // };
-
-    
-
-
-    // For Images Slide
-    let [postImgsCounting, setPostImgsCounting] = useState(1);
-    let postImages = document.querySelectorAll('.carousel .post img');
-
-    useEffect(() => {
-        postImages.forEach((p) => {
-            p.classList.remove('active')
-        
-            if(p.id == postImgsCounting) {
-                p.classList.add('active')
-            }
-        });
-    }, [postImgsCounting]);
-
-    function nextPost() { setPostImgsCounting((prevCount) => (prevCount < postImages.length ? prevCount + 1 : prevCount)); };
-    function prevPost() { setPostImgsCounting((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount)); };
-
-
-    /* Services Galleries Windows END */
-
 
 
     return (
@@ -111,7 +51,8 @@ function Home() {
                         </div>
 
                         <div className='logo'>
-                            <img src={require('../Images/logo1.png')} />
+                            <img className='logo' src={require('../Images/logo1.png')} />
+
                         </div>
                     </div>
                 </div>
@@ -145,7 +86,7 @@ function Home() {
                                 <p>نساعدك على صنع واجهة افضل لمصلحتك من خلال تصميم منشوراتك و اعلاناتك على مواقع التواصل الاجتماعي بالطريقة الانسب لمجال مصحلتك او مشروعك</p>
                                 <p>مهما يكن مجال مصلحتك فأنت بحاجة لمنشورات ملفته لجذب الزبائن!</p>
                             
-                                <button id='designGallery'>انظر للمزيد</button>
+                                <a href="Work"> <button>انظر للمزيد</button> </a>
                             </div>
                         </div>
 
@@ -229,111 +170,6 @@ function Home() {
                         </div>
                     </div>
 
-
-
-                    <div className='serviceDivNoti designGallery'>
-                        <div className='container'>
-
-                            <div className='exit' id='exitWindow'>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-
-                            <div className='title'>
-                                <h2>تصاميم</h2>
-                                <h3>نساعد على تحسين واجهة مصلحتك من خلال تصاميمنا</h3>
-                            </div>
-
-
-                            <div className='carousel'>
-                                <i class="next fa-solid fa-arrow-right" onClick={nextPost}></i>
-
-                                <div className='post'>
-                                    <img src={require('../Images//design-gallery/1.jpeg')} id='1' class='active'/>
-                                    <img src={require('../Images//design-gallery/2.jpeg')} id='2'/>
-                                    <img src={require('../Images//design-gallery/3.jpeg')} id='3'/>
-                                    <img src={require('../Images//design-gallery/4.jpeg')} id='4'/>
-                                    <img src={require('../Images//design-gallery/5.jpeg')} id='5'/>
-                                    <img src={require('../Images//design-gallery/6.jpeg')} id='6'/>
-                                    <img src={require('../Images//design-gallery/7.jpeg')} id='7'/>
-                                    <img src={require('../Images//design-gallery/8.jpeg')} id='8'/>
-                                    <img src={require('../Images//design-gallery/9.jpeg')} id='9'/>
-                                    <img src={require('../Images//design-gallery/10.jpeg')} id='10'/>
-                                </div>
-
-                                <i class="next fa-solid fa-arrow-left" onClick={prevPost}></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='serviceDivNoti marketingGallery'>
-                        <div className='container'>
-                            <div className='exit' id='exitWindow'>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-
-                            <div className='title'>
-                                B
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='serviceDivNoti rightsGallery'>
-                        <div className='container'>
-
-                            <div className='exit' id='exitWindow'>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-
-                            <div className='title'>
-                                <h2>تحصيل حقوق</h2>
-                                <h3>مكتب إحتراف عنوان لحل قضايا التأمين الوطني <br></br> مكتبنا يتابع القضية حتى تحصيلها</h3>
-                            </div>
-                            
-                            <div className='carousel'>
-                                <i class="next fa-solid fa-arrow-right" onClick={nextPost}></i>
-
-                                <div className='post'>
-                                    <img src={require('../Images/rights-gallery/1.jpeg')} id='1' class='active'/>
-                                    <img src={require('../Images/rights-gallery/2.jpeg')} id='2' />
-                                    <img src={require('../Images/rights-gallery/3.jpeg')} id='3' />
-                                    <img src={require('../Images/rights-gallery/4.jpeg')} id='4' />
-                                    <img src={require('../Images/rights-gallery/5.jpeg')} id='5' />
-                                    <img src={require('../Images/rights-gallery/6.jpeg')} id='6' />
-                                    <img src={require('../Images/rights-gallery/7.jpeg')} id='7' />
-                                    <img src={require('../Images/rights-gallery/8.jpeg')} id='8' />
-                                    <img src={require('../Images/rights-gallery/9.jpeg')} id='9' />
-                                    <img src={require('../Images/rights-gallery/10.jpeg')} id='10' />
-                                    <img src={require('../Images/rights-gallery/11.jpeg')} id='11' />
-                                    <img src={require('../Images/rights-gallery/12.jpeg')} id='12' />
-                                    <img src={require('../Images/rights-gallery/13.jpeg')} id='13' />
-                                    <img src={require('../Images/rights-gallery/14.jpeg')} id='14' />
-                                </div>
-
-                                <i class="next fa-solid fa-arrow-left" onClick={prevPost}></i>
-                            </div>
-
-                            <div className='proofs'>
-                                <h2>بعض انجازات مكتبنا في تحصيل الحقوق:</h2>
-
-                                <div className='pImages'>
-                                    <img src={require('../Images/rights-gallery/p3.jpeg')} />
-                                    <img src={require('../Images/rights-gallery/p4.jpeg')} />
-                                    <img src={require('../Images/rights-gallery/p5.jpeg')} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='serviceDivNoti webGallery'>
-                        <div className='container'>
-                            <div className='exit' id='exitWindow'>
-                                <i class="fa-solid fa-xmark"></i>
-                            </div>
-                            <div className='title'>
-                                D
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -446,12 +282,6 @@ function Home() {
 
 
             <footer>
-                {/* <ul className='socials'>
-                    <li><a href='#'><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href='#'><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href='#'><i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul> */}
-
                 <div className='copyright'>
                     <p>جميع الحقوق محفوظة © مكتب احتراف</p>
                 </div>
