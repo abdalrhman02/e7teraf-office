@@ -40,6 +40,7 @@ function Home() {
     });
 
 
+
     // For Close The Window
     let exitServiceNoti = document.querySelectorAll('#exitWindow');
 

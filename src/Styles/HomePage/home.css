@@ -653,6 +653,29 @@
   background: linear-gradient(26deg, #f4a718, #f8d702);
 }
 
+@media (max-width: 580px) {
+  .contact .container {
+    padding: 7em 0;
+  }
+  .contact .container .formContainer {
+    padding: 20px 35px;
+  }
+  .contact .container .formContainer .title h1 {
+    font-size: 27px;
+  }
+  .contact .container .formContainer .title p {
+    font-size: 14px;
+  }
+  .contact .container .formContainer form input {
+    height: 2.9em;
+  }
+  .contact .container .formContainer form textarea {
+    height: 9.3em;
+  }
+  .contact .container .formContainer form button {
+    height: 2.7em;
+  }
+}
 footer {
   background-color: var(--f-color);
 }
