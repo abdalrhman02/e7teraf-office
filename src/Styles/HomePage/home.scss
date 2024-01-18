@@ -74,6 +74,11 @@
                         cursor: pointer;
                     }
                 }
+
+                img {
+                    width: 2.5em;
+                    margin-right: -5px;
+                }
             }
         }
 
@@ -547,6 +552,12 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .services .container .serviceDivNoti .container .carousel .post img {
+        width: 24em;
+    }
+}
+
 @media (max-width: 1000px) {
 
     .services .container {
@@ -630,7 +641,7 @@
             align-items: center;
 
             .number {
-                font-size: 5em;
+                font-size:  5em;
                 position: relative;
                 width: fit-content;
                 z-index: 1;

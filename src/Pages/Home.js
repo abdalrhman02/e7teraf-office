@@ -87,14 +87,15 @@ function Home() {
                         <h2 className='subTitle'>مغناطيس النجاحات</h2>
                         <h1 className='mainTitle'>نقودك للنجاحات بجميع الوسائل الصحيحة</h1>
                         <p>مكتبنا متخصص بخدمات متكاملة في مجالات التصميم | التسويق | بناء مواقع | تحصيل الحقوق
-يتميز المكتب بطاقم من المحترفين المبدعين الذين يجمعون بين الخبرة والإبداع لتلبية احتياجات الزبائن بشكل فعّال. 
-سواء كنت بحاجة إلى تصميم جذاب، حملة إعلانية فعّالة، أو استراتيجية تسويقية ملهمة، نقدم لك حلاً مخصصًا لضمان تحقيق أهدافك بنجاح.</p>
+            يتميز المكتب بطاقم من المحترفين المبدعين الذين يجمعون بين الخبرة والإبداع لتلبية احتياجات الزبائن بشكل فعّال. 
+            سواء كنت بحاجة إلى تصميم جذاب، حملة إعلانية فعّالة، أو استراتيجية تسويقية ملهمة، نقدم لك حلاً مخصصًا لضمان تحقيق أهدافك بنجاح.</p>
                         <button>المزيد</button>
 
                         <ul>
                             <a href='https://www.facebook.com/mohamed96sh'><i class="fa-brands fa-facebook-f"></i></a>
                             <a href='https://www.instagram.com/e7teraf_office/'><i class="fa-brands fa-instagram"></i></a>
                             <a href='https://wa.link/dn75jc'><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href='https://www.e7teraf-office.com/'><img src={require('../Images/logo1.png')}/></a>
                         </ul>
                     </div>
 
@@ -144,7 +145,7 @@ function Home() {
                                 <p>نساعدك على صنع واجهة افضل لمصلحتك من خلال تصميم منشوراتك و اعلاناتك على مواقع التواصل الاجتماعي بالطريقة الانسب لمجال مصحلتك او مشروعك</p>
                                 <p>مهما يكن مجال مصلحتك فأنت بحاجة لمنشورات ملفته لجذب الزبائن!</p>
                             
-                                <button id='designGallery'>انظر للتفاصيل</button>
+                                <button id='designGallery'>انظر للمزيد</button>
                             </div>
                         </div>
 
@@ -172,7 +173,7 @@ function Home() {
                                     </ul>
                                 </div>
 
-                                <button id='marketingGallery'>انظر للتفاصيل</button>
+                                <button id='marketingGallery'>انظر للمزيد</button>
                             </div>
                         </div>
 
@@ -191,7 +192,7 @@ function Home() {
                             <div className='desc'>
                                 <p>مكتبنا يقدم خدمة الإستشارة بما يتعلق بقضايا التأمين الوطني وتحصيل الحقوق وحل القضايا ضمن طاقم مؤهل ومهني</p>  
                             
-                                <button id='rightsGallery'>انظر للتفاصيل</button>
+                                <button id='rightsGallery'>انظر للمزيد</button>
                             </div>
                         </div>
 
@@ -218,7 +219,7 @@ function Home() {
                                         <li>التميز عن المنافسين</li>
                                     </ul>
 
-                                    {/* <button id='webGallery'>انظر للتفاصيل</button> */}
+                                    {/* <button id='webGallery'>انظر للمزيد</button> */}
                                 </div>
                             </div>
                         </div>

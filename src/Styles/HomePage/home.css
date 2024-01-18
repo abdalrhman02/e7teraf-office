@@ -66,6 +66,10 @@
   transform: scale(1.05) rotate(5deg);
   cursor: pointer;
 }
+.landing .container .text ul img {
+  width: 2.5em;
+  margin-right: -5px;
+}
 .landing .container .image {
   position: relative;
   z-index: 1;
@@ -400,6 +404,11 @@
   cursor: pointer;
 }
 
+@media (max-width: 1300px) {
+  .services .container .serviceDivNoti .container .carousel .post img {
+    width: 24em;
+  }
+}
 @media (max-width: 1000px) {
   .services .container {
     padding: 3em 4em;
