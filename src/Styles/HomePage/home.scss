@@ -658,7 +658,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 2em;
+            flex-wrap: wrap;
+            gap: 6em 2.3em;
             margin-top: 5em;
             width: 100%;
 
@@ -666,21 +667,22 @@
                 position: relative;
                 background-color: #FFF;
                 padding: 1em;
-                width: 31%;
-                height: 14em;
+                width: 30%;
+                height: 13em;
                 border-radius: 10px;
 
                 .person {
                     margin-top: -72px;
                     
                     img {
-                        width: 6.5em;
+                        width: 5.5em;
+                        height: 5.5em;
                         border-radius: 50%;
-                        border: 8px solid #fff;
+                        border: 6px solid #fff;
                     }
     
                     .name {
-                        
+                        font-size: 16px;
                     }
                 }
 
@@ -700,7 +702,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .customers .container .feedbacks {
         gap: 6em;
         flex-direction: column;
@@ -740,8 +742,7 @@
             flex-direction: column;
             background: linear-gradient(35deg, var(--f-color), #0763a0);
             color: #fff;
-            width: 45%;
-            padding: 26px;
+            padding: 30px 50px;
             border-radius: 5px;
 
             .title {

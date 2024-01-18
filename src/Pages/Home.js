@@ -86,8 +86,10 @@ function Home() {
                     <div className="text">
                         <h2 className='subTitle'>مغناطيس النجاحات</h2>
                         <h1 className='mainTitle'>نقودك للنجاحات بجميع الوسائل الصحيحة</h1>
-                        <p>مكتبنا يقدم لك خدمة التصميم و التسويق لنجاح مصلحتك او مشروعك و الوصول لاكبر عدد ممكن من الزبائن</p>
-                        <button>التفاصيل</button>
+                        <p>مكتبنا متخصص بخدمات متكاملة في مجالات التصميم | التسويق | بناء مواقع | تحصيل الحقوق
+يتميز المكتب بطاقم من المحترفين المبدعين الذين يجمعون بين الخبرة والإبداع لتلبية احتياجات الزبائن بشكل فعّال. 
+سواء كنت بحاجة إلى تصميم جذاب، حملة إعلانية فعّالة، أو استراتيجية تسويقية ملهمة، نقدم لك حلاً مخصصًا لضمان تحقيق أهدافك بنجاح.</p>
+                        <button>المزيد</button>
 
                         <ul>
                             <a href='https://www.facebook.com/mohamed96sh'><i class="fa-brands fa-facebook-f"></i></a>
@@ -345,26 +347,58 @@ function Home() {
                     <div className='feedbacks'>
                         <div className='feedback'>
                             <div className='person'>
-                                <img src={require('../Images/pr.jpg')} />
-                                <h3 className='name'>اسم الشخص</h3>
+                                <img src={require('../Images/client1.jpeg')} />
+                                <h3 className='name'>بإدارة سجى مراعبة</h3>
                             </div>
                             <p className='fb'>شغل معلمين🌺🌺<br></br> اشي روعه تسلم يا معلم</p>
                         </div>
 
                         <div className='feedback'>
                             <div className='person'>
-                                <img src={require('../Images/pr.jpg')} />
-                                <h3 className='name'>اسم الشخص</h3>
+                                <img src={require('../Images/client2.jpeg')} />
+                                <h3 className='name'>بإدارة حسناء سعادة</h3>
                             </div>
                             <p className='fb'>احتراف مش بس اسم !!! <br></br>وكمااان الشغل احترافي</p>
                         </div>
 
                         <div className='feedback'>
                             <div className='person'>
-                                <img src={require('../Images/pr.jpg')} />
-                                <h3 className='name'>اسم الشخص</h3>
+                                <img src={require('../Images/client3.jpeg')} />
+                                <h3 className='name'>بإدارة مجلس محلي كفر برا</h3>
                             </div>
                             <p className='fb'>ذوق راق ورائع عمل فوري وسريع واسعار منافسة انصح بشدة ، كل التوفيق لكم</p>
+                        </div>
+
+                        <div className='feedback'>
+                            <div className='person'>
+                                <img src={require('../Images/client4.jpeg')} />
+                                <h3 className='name'>بإدارة منال رابي</h3>
+                            </div>
+                            <p className='fb'>ذوق راق ورائع عمل فوري وسريع واسعار منافسة انصح بشدة ، كل التوفيق لكم</p>
+                        </div>
+
+                        <div className='feedback'>
+                            <div className='person'>
+                                <img src={require('../Images/client5.jpeg')} />
+                                <h3 className='name'>بإدارة يوسف جرن</h3>
+                            </div>
+                            <p className='fb'>ذوق راق ورائع عمل فوري وسريع واسعار منافسة انصح بشدة ، كل التوفيق لكم</p>
+                        </div>
+
+                        <div className='feedback'>
+                            <div className='person'>
+                                <img src={require('../Images/client6.jpeg')} />
+                                <h3 className='name'>بإدارة يوسف إغبارية - ام الفحم</h3>
+                            </div>
+                            <p className='fb'>عمل جيد جدا!</p>
+                        </div>
+
+                        <div className='feedback'>
+                            <div className='person'>
+                                <img src={require('../Images/client7.jpeg')} />
+                                <h3 className='name'>بإدارة ابو القاسم</h3>
+                            </div>
+                            <p className='fb'>عمل جيد جدا!</p>
                         </div>
                     </div>
                 </div>
