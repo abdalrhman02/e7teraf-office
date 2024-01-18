@@ -907,9 +907,12 @@
 
     .contact .container .formContainer .title p { font-size: 14px; }
 
-    .contact .container .formContainer form input { height: 2.9em; }
+    .contact .container .formContainer form input {
+        height: 2.9em;
+        width: 24em;
+    }
 
-    .contact .container .formContainer form textarea {  height: 9.3em; }
+    .contact .container .formContainer form textarea {  height: 8em; }
 
     .contact .container .formContainer form button { height: 2.7em; }
 }

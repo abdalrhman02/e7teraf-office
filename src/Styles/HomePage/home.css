@@ -702,9 +702,10 @@
   }
   .contact .container .formContainer form input {
     height: 2.9em;
+    width: 24em;
   }
   .contact .container .formContainer form textarea {
-    height: 9.3em;
+    height: 8em;
   }
   .contact .container .formContainer form button {
     height: 2.7em;
