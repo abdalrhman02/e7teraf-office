@@ -6,6 +6,7 @@
     height: 100vh;
 
     .container {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -125,7 +126,7 @@
                 top: 3em;
                 width: 11em;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
 
                 .name {
@@ -134,7 +135,7 @@
                     align-items: center;
 
                     h2 {
-                        font-size: 28px;
+                        font-size: 25px;
                         width: fit-content;
                         line-height: 1.5em;
                         position: relative;
@@ -210,35 +211,36 @@
 @media (max-width: 1200px) {
     .landing .container {
         margin: 2.5em 3em;
-        padding: 2.5em 5em;
+        padding: 2.5em 5.5em;
     }
 
     .landing .container .text .subTitle {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .landing .container .text .mainTitle {
-        font-size: 33px;
+        font-size: 32px;
     }
 
     .landing .container .text p {
         max-width: 420px;
+        font-size: 13px
     }
 
     .landing .container .text button {
         width: 7.5em;
-        height: 2.3em;
-        font-size: 16px;
+        height: 2.2em;
+        font-size: 15px;
     }
 
 
     .landing .container .image img {
-        width: 25em;
+        width: 24.5em;
     }
 
     .landing .container .image .shape {
-        width: 21em;
-        height: 20em;
+        width: 20.5em;
+        height: 19.5em;
     }
 }
 
@@ -264,6 +266,49 @@
     .landing .container .text .mainTitle {
         margin: 20px 0 20px;
     }
+
+    .landing .container .image {
+        position: absolute;
+        bottom: -4px;
+    }
+
+    .name h2 {
+        font-size: 23px;
+    }
+
+    
+}
+
+@media (max-width: 780px) {
+    
+    .landing {
+        height: 160vh
+    }
+
+    .landing .container {
+        height: 62em
+    }
+
+    .landing .container .image {
+        position: relative;
+        top: -8em;
+    }
+
+    .landing .container .image .name-logo {
+        right: 0;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing .container .image .name-logo {
+        bottom: -32.5em;
+        gap: 2em
+    }
+   
 }
 
 @media (max-width: 550px) {
