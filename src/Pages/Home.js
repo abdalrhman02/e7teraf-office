@@ -128,7 +128,7 @@ function Home() {
                 <div className='container'>
                     
                     <div className='title'>
-                        <h1>ما الخدمات التي نقدمها ؟</h1>
+                        <h1>الخدمات التي نقدمها</h1>
                     </div>
 
                     <div className='service design'>
@@ -338,7 +338,7 @@ function Home() {
             <div className='customers'>
                 <div className='container'>
                     <div className='title'>
-                        <h4 className='number'>+40</h4>
+                        <h4 className='number'>+80</h4>
                         <p>شخص تعامل معنا حتى اليوم</p>
                     </div>
 
