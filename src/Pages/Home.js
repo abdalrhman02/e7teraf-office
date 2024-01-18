@@ -104,15 +104,14 @@ function Home() {
                         <img src={require('../Images/mohammed.png')} />
                         <div className='shape'></div>
 
-                        <div className='name-logo'>
-                            <div className='name'>
+                        <div className='name'>
                                 <h2>مدير</h2>
                                 <h2>مكتب إحتراف</h2>
                                 <h2>محمد شملة</h2>
-                            </div>
+                        </div>
 
-                            <img className='logo' src={require('../Images/logo1.png')} />
-
+                        <div className='logo'>
+                            <img src={require('../Images/logo1.png')} />
                         </div>
                     </div>
                 </div>
@@ -122,7 +121,7 @@ function Home() {
 
                     <div className='number'>
                         <h4>اتصل بنا</h4>
-                        <p>+972 52-450-7838</p>
+                        <p dir='ltr'>+972 52-450-7838</p>
                     </div>
                 </div>
             </div>

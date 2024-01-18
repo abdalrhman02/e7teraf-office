@@ -119,8 +119,40 @@
                 // }
             }
 
+            .name {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -2.1em;
 
-            .name-logo {
+                h2 {
+                    font-size: 25px;
+                    width: fit-content;
+                    line-height: 1.5em;
+                    position: relative;
+                    z-index: 1;
+                    color:#fff;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 8px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: linear-gradient(26deg, var(--t-color), var(--s-color));
+                        width: 104%;
+                        height: 25px;
+                        padding: 2px;
+                        z-index: -1;
+                    }
+                }
+            }
+
+
+            .logo {
                 position: absolute;
                 right: 22em;
                 top: 3em;
@@ -129,38 +161,13 @@
                 flex-direction: column-reverse;
                 align-items: center;
 
-                .name {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
 
-                    h2 {
-                        font-size: 25px;
-                        width: fit-content;
-                        line-height: 1.5em;
-                        position: relative;
-                        z-index: 1;
-        
-                        // &::after {
-                        //     content: "";
-                        //     position: absolute;
-                        //     bottom: 8px;
-                        //     left: 50%;
-                        //     transform: translateX(-50%);
-                        //     background: linear-gradient(26deg, var(--t-color), var(--s-color));
-                        //     width: 104%;
-                        //     height: 25px;
-                        //     padding: 2px;
-                        //     z-index: -1;
-                        // }
-                    }
-                }
 
-                .logo {
-                    width: 10em;
-                    // position: absolute;
-                    top: -5.5em;
-                    left: -11px;
+                img {
+                    width: 8em;
+                    position: absolute;
+                    top: -9em;
+                    left: 8px;
                 }
     
             }
@@ -242,19 +249,24 @@
         width: 20.5em;
         height: 19.5em;
     }
+
+    .landing .container .image .logo img {
+        top: -10em;
+        left: 4.5em;
+    }
 }
 
 @media (max-width: 950px) {
 
     .landing {
-        height: 130vh;
+        height: 145vh;
     }
 
     .landing .container {
         flex-direction: column;
         text-align: center;
         padding: 2em 5em;
-        height: 51em;
+        height: 55em;
     }
 
     .landing .container .text {
@@ -269,7 +281,7 @@
 
     .landing .container .image {
         position: absolute;
-        bottom: -4px;
+        bottom: 3em;
     }
 
     .name h2 {
@@ -286,27 +298,16 @@
     }
 
     .landing .container {
-        height: 62em
+        height: 55em
     }
 
     .landing .container .image {
-        position: relative;
-        top: -8em;
+        top: auto;
     }
 
-    .landing .container .image .name-logo {
-        right: 0;
-        top: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .landing .container .image .name-logo {
-        bottom: -32.5em;
-        gap: 2em
+    .landing .container .image .logo img {
+        top: -4em;
+        width: 7em
     }
    
 }
@@ -334,12 +335,21 @@
         height: 18em;
     }
 
-    .landing .container .image .name-logo .logo {
-        width: 8em;
+    
+    .landing .container .image .name {
+        bottom: -1em;
+    }
+    .landing .container .image .name h2 {
+        font-size: 21px;
+    }
+    .landing .container .image .name h2::after {
+        height: 20px;
     }
 
-    .landing .container .image .name-logo .name h2 {
-        font-size: 21px;
+
+    .landing .container .image .logo img {
+        left: 9.5em;
+        width: 5.5em
     }
 }
 
