@@ -1,0 +1,109 @@
+.gallery .container {
+  background: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 17em auto;
+}
+.gallery .container .bar {
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  padding: 2em;
+  color: #Fff;
+}
+.gallery .container .bar img {
+  width: 9em;
+  margin: -2.5em 0 -1em 0;
+}
+.gallery .container .bar h2 {
+  margin-bottom: 20px;
+}
+.gallery .container .bar .ourWork {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2em;
+}
+.gallery .container .bar .ourWork a {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+}
+.gallery .container .bar .ourWork a:hover {
+  background: linear-gradient(26deg, #fbda02, #feaa0f);
+}
+.gallery .container .content {
+  padding: 3em 2em;
+  position: relative;
+}
+.gallery .container .content .title {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.gallery .container .content .title::after {
+  content: "";
+  background: linear-gradient(26deg, var(--t-color), var(--s-color));
+  width: 42%;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gallery .container .content .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8em;
+}
+.gallery .container .content .carousel .fa-arrow-right, .gallery .container .content .carousel .fa-arrow-left {
+  position: relative;
+  font-size: 32px;
+  background: linear-gradient(26deg, #0a4a75, #3e799f);
+  color: #fff;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+}
+.gallery .container .content .carousel .fa-arrow-right::before, .gallery .container .content .carousel .fa-arrow-left::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.gallery .container .content .carousel .post {
+  margin: 0 4em;
+}
+.gallery .container .content .carousel .post img {
+  display: none;
+  width: 23em;
+  border: 1.5px solid black;
+  border-radius: 7px;
+}
+.gallery .container .content .carousel .post img.active {
+  display: block;
+}
+.gallery .container .content .more {
+  margin-top: 5em;
+}
+.gallery .container .content .more .imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 3em;
+}
+.gallery .container .content .more .imgs img {
+  width: 40%;
+  border: 1.5px solid black;
+  border-radius: 7px;
+  transition: var(--transition);
+}
+.gallery .container .content .more .imgs img:hover {
+  transform: scale(1.03);
+}/*# sourceMappingURL=work.css.map */
