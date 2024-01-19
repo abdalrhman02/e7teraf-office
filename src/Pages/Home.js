@@ -114,7 +114,7 @@ function Home() {
                                     </ul>
                                 </div>
 
-                                <a href="Design"><button>انظر للمزيد</button> </a>
+                                <a href="Marketing"><button>انظر للمزيد</button> </a>
                             </div>
                         </div>
 

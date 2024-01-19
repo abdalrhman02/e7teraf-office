@@ -29,9 +29,9 @@ function Rights() {
                         <h2>بعض من اعمالنا</h2>
                         <div className="ourWork">
                             <a href='Design'>التصميم</a>
-                            <a href='#'>التسويق</a>
-                            <a href='Rights'>تحصيل الحقوق</a>
-                            <a href='#'>بناء المواقع</a>
+                            <a href='Marketing'>التسويق</a>
+                            <a href='#'>تحصيل الحقوق</a>
+                            <a href='Web'>بناء المواقع</a>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,8 @@ import './i18n';
 import Home from './Pages/Home.js';
 import Design from './Pages/Work/Design.js';
 import Rights from './Pages/Work/Rights.js';
+import Marketing from './Pages/Work/Marketing.js';
+import Web from './Pages/Work/Web.js';
 
 
 // Sytle Files
@@ -28,6 +30,8 @@ const router = createBrowserRouter([
   { path: "/", element: <Home />,},
   { path: "Design", element: <Design />,},
   { path: "Rights", element: <Rights />,},
+  { path: "Marketing", element: <Marketing />,},
+  { path: "Web", element: <Web />,},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
