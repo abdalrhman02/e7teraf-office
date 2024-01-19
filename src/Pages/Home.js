@@ -2,9 +2,6 @@
 import { useState, useEffect } from 'react';
 
 
-/* i18next framework */
-import { useTranslation } from 'react-i18next';
-
 function Home() {
 
     // For call us notifaction
@@ -30,7 +27,7 @@ function Home() {
                         <p>مكتبنا متخصص بخدمات متكاملة في مجالات التصميم | التسويق | بناء مواقع | تحصيل الحقوق
             يتميز المكتب بطاقم من المحترفين المبدعين الذين يجمعون بين الخبرة والإبداع لتلبية احتياجات الزبائن بشكل فعّال. 
             سواء كنت بحاجة إلى تصميم جذاب، حملة إعلانية فعّالة، أو استراتيجية تسويقية ملهمة، نقدم لك حلاً مخصصًا لضمان تحقيق أهدافك بنجاح.</p>
-                        <button>المزيد</button>
+                        <a href="Design"><button>المزيد</button></a>
 
                         <ul>
                             <a href='https://www.facebook.com/mohamed96sh'><i class="fa-brands fa-facebook-f"></i></a>
