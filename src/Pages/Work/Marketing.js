@@ -28,7 +28,23 @@ function Marketing() {
                     <video controls>
                         <source src={require('../../Images/marketing-gallery/marketing-ad.mp4')} />
                     </video>
-                    
+
+                    <video controls>
+                        <source src={require('../../Images/marketing-gallery/ad1.mp4')} />
+                    </video>
+
+                    <video controls>
+                        <source src={require('../../Images/marketing-gallery/ad2.mp4')} />
+                    </video>
+
+                    <video controls>
+                        <source src={require('../../Images/marketing-gallery/ad3.mp4')} />
+                    </video>
+
+                    <video controls>
+                        <source src={require('../../Images/marketing-gallery/ad4.mp4')} />
+                    </video>
+
                 </div>
             </div>
         </div>
