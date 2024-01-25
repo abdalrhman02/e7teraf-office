@@ -41,6 +41,9 @@
 }
 .gallery .container .content .title {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 .gallery .container .content .title h2 {
@@ -59,10 +62,7 @@
   transform: translateX(-50%);
 }
 .gallery .container .content .title p {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
+  max-width: 600px;
 }
 .gallery .container .content .examples {
   display: flex;
@@ -101,7 +101,7 @@
   transform: scale(1.03);
 }
 .gallery .container .content video {
-  margin-top: 6em;
+  margin-top: 4em;
   width: 100%;
   border: 1.5px solid black;
   border-radius: 7px;
