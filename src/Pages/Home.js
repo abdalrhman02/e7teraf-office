@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 
 function Home() {
@@ -17,11 +17,43 @@ function Home() {
     }
 
 
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+    
+          const elementsAtScrollPosition = document.elementsFromPoint(window.innerWidth / 1.5, scrollPosition);
+    
+          elementsAtScrollPosition.forEach(element => {
+            // console.log(element);
+
+            if(element.classList.contains('container')) {
+                let elementChildren = Array.from(element.children);
+
+                elementChildren.forEach(childrenEle => {
+                    // console.log(childrenEle);
+
+                    if(childrenEle.classList.contains('animate__animated')) {
+                        childrenEle.classList.add('animate__flipInX')
+                    }
+                });
+            };
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+
     return (
         <>
             <div className="landing">
                 <div className='container'>
-                    <div className="text">
+                    <div className="text animate__animated">
                         <h2 className='subTitle'>مغناطيس النجاحات</h2>
                         <h1 className='mainTitle'>نقودك للنجاحات بجميع الوسائل الصحيحة</h1>
                         <p>مكتبنا متخصص بخدمات متكاملة في مجالات التصميم | التسويق | بناء مواقع | تحصيل الحقوق
@@ -37,7 +69,7 @@ function Home() {
                         </ul>
                     </div>
 
-                    <div className="image">
+                    <div className="image animate__animated">
                         <img src={require('../Images/mohammed.png')} />
                         <div className='shape'></div>
 
@@ -72,7 +104,7 @@ function Home() {
                         <h1>الخدمات التي نقدمها</h1>
                     </div>
 
-                    <div className='service design'>
+                    <div className='service design animate__animated'>
                         <div className='text'>
                             <div className='title'>
                                 <h2>01 /</h2>
@@ -92,7 +124,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='service marketing' dir='ltr'>
+                    <div className='service marketing animate__animated' dir='ltr'>
                         <div className='text' dir='rtl'>
                             <div className='title'>
                                 <h2>02 /</h2>
@@ -120,7 +152,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='service rights'>
+                    <div className='service rights animate__animated'>
                         <div className='text'>
                             <div className='title'>
                                 <h2>03 /</h2>
@@ -139,7 +171,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='service website' dir='ltr'>
+                    <div className='service website animate__animated' dir='ltr'>
                         <div className='text' dir='rtl'>
                             <div className='title'>
                                 <h2>04 /</h2>

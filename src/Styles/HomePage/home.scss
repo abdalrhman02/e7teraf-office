@@ -1,4 +1,6 @@
 
+
+
 .landing {
     position: relative;
     overflow: hidden;
@@ -315,12 +317,13 @@
 @media (max-width: 550px) {
 
     .landing {
-
+        height: 130vh;
     }
 
     .landing .container {
         padding: 3em 2em;
         margin: 2.5em 1.5em;
+        height: 60em;
     }
 
     .landing .container .text .mainTitle {
@@ -356,7 +359,7 @@
 
 
 .services {
-
+    overflow: hidden;
     .container {
         padding: 3em 6em;
 
@@ -547,6 +550,7 @@
 }
 
 .customers {
+    overflow: hidden;
     background: linear-gradient(26deg, #0a4a75, #3e799f);
     .container {
         text-align: center;
@@ -662,7 +666,7 @@
 }
 
 .contact {
-
+    overflow: hidden;
     .container {
         display: flex;
         justify-content: center;
@@ -796,6 +800,7 @@
 
 
 footer {
+    overflow: hidden;
     background-color: var(--f-color);
 
     .socials {

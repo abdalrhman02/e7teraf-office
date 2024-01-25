@@ -234,9 +234,13 @@
   }
 }
 @media (max-width: 550px) {
+  .landing {
+    height: 130vh;
+  }
   .landing .container {
     padding: 3em 2em;
     margin: 2.5em 1.5em;
+    height: 60em;
   }
   .landing .container .text .mainTitle {
     font-size: 31px;
@@ -261,6 +265,9 @@
     left: 9.5em;
     width: 5.5em;
   }
+}
+.services {
+  overflow: hidden;
 }
 .services .container {
   padding: 3em 6em;
@@ -411,6 +418,7 @@
   }
 }
 .customers {
+  overflow: hidden;
   background: linear-gradient(26deg, #0a4a75, #3e799f);
 }
 .customers .container {
@@ -507,6 +515,9 @@
   .customers .container .feedbacks .feedback {
     width: 100%;
   }
+}
+.contact {
+  overflow: hidden;
 }
 .contact .container {
   display: flex;
@@ -627,6 +638,7 @@
   }
 }
 footer {
+  overflow: hidden;
   background-color: var(--f-color);
 }
 footer .socials {
