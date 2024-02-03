@@ -1,5 +1,5 @@
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 
 
 function Home() {
@@ -18,23 +18,21 @@ function Home() {
 
 
 
-    useEffect(() => {
+    useMemo(() => {
         const handleScroll = () => {
           const scrollPosition = window.scrollY;
     
           const elementsAtScrollPosition = document.elementsFromPoint(window.innerWidth / 1.5, scrollPosition);
     
           elementsAtScrollPosition.forEach(element => {
-            // console.log(element);
 
             if(element.classList.contains('container')) {
                 let elementChildren = Array.from(element.children);
 
                 elementChildren.forEach(childrenEle => {
-                    // console.log(childrenEle);
-
                     if(childrenEle.classList.contains('animate__animated')) {
                         childrenEle.classList.add('animate__flipInX')
+                        // console.log(childrenEle)
                     }
                 });
             };
@@ -189,7 +187,7 @@ function Home() {
                                         <li>التميز عن المنافسين</li>
                                     </ul>
 
-                                    {/* <button id='webGallery'>انظر للمزيد</button> */}
+                                    <a href='Web'><button>انظر للمزيد</button></a>
                                 </div>
                             </div>
                         </div>
@@ -210,8 +208,8 @@ function Home() {
                         <p>شخص تعامل معنا حتى اليوم</p>
                     </div>
 
-                    <div className='feedbacks'>
-                        <div className='feedback'>
+                    <div className='feedbacks animate__animated'>
+                        <div className='feedback animate__animated'>
                             <div className='person'>
                                 <img src={require('../Images/client1.jpeg')} />
                                 <h3 className='name'>بإدارة سجى مراعبة</h3>
@@ -219,7 +217,7 @@ function Home() {
                             <p className='fb'>شغل معلمين🌺🌺<br></br> اشي روعه تسلم يا معلم</p>
                         </div>
 
-                        <div className='feedback'>
+                        <div className='feedback '>
                             <div className='person'>
                                 <img src={require('../Images/client2.jpeg')} />
                                 <h3 className='name'>بإدارة حسناء سعادة</h3>
@@ -273,7 +271,7 @@ function Home() {
 
             <div className='contact'>
                 <div className='container'>
-                    <div className='formContainer'>
+                    <div className='formContainer animate__animated'>
                         <div className='title'>
                             <h1>تواصل معنا</h1>
                             <p>اترك تفاصيلك و سوف نعود لك في اقرب وقت ممكن</p>

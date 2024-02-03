@@ -21,12 +21,17 @@ function Web() {
                 <div className='content'>
                     <div className='title'>
                         <h2>بناء المواقع</h2>
+                        <p>لتطوير مصلحتك و تحسينها, اطلب موقعك الخاص الان من مكتب احتراف</p>
                     </div>
 
-                    <div className='note'>
+                    <video controls>
+                        <source src={require('../../Images/web-gallery/web-ad.mp4')} />
+                    </video>
+
+                    {/* <div className='note'>
                         <i class="fa-solid fa-exclamation"></i>
                         <p>سيتم إضافة محتوى بناء المواقع قريبا...</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
