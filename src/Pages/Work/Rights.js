@@ -21,7 +21,7 @@ function Rights() {
     // function prevPost() { setPostImgsCounting((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount)); };
 
     return (
-        <div className="gallery rightsGallery">
+        <div className="gallery">
             <div className='container'>
                 <div className="bar">
                     <div className='barContent'>

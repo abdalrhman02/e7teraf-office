@@ -21,7 +21,7 @@ function Design() {
     function prevPost() { setPostImgsCounting((prevCount) => (prevCount > 1 ? prevCount - 1 : prevCount)); };
 
     return (
-        <div className="gallery designGallery">
+        <div className="gallery">
             <div className="container">
                 
                 <div className="bar">

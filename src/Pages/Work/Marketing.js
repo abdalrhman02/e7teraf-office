@@ -4,7 +4,7 @@ import {  useState, useEffect} from 'react';
 function Marketing() {
 
     return (
-        <div className="gallery rightsGallery">
+        <div className="gallery">
             <div className='container'>
                 <div className="bar">
                     <div className='barContent'>
@@ -22,7 +22,7 @@ function Marketing() {
                 <div className='content'>
                     <div className='title'>
                         <h2>التسويق لتقدم مصلحتك و زيادة ارباحك</h2>
-                        <p>مكتبنا مختص بمزايا التسويق وطرق ادارة المنتج بوسائل مختلفة ومتعددة، نسعى الى تطوير مصلحتك لنجعلها الرائدة بالسوق،ص من حيث التsسويق الإحترافي .</p>
+                        <p>مكتبنا مختص بمزايا التسويق وطرق ادارة المنتج بوسائل مختلفة ومتعددة، نسعى الى تطوير مصلحتك لنجعلها الرائدة بالسوق، من حيث التسويق الإحترافي .</p>
                     </div>
 
                     <video controls>
