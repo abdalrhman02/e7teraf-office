@@ -20,7 +20,7 @@ function Web() {
 
                 <div className='content'>
                     <div className='title'>
-                        <h2>بناء المواقع</h2>
+                        <h2>بناء2المواقع</h2>
                         <p>لتطوير مصلحتك و تحسينها, اطلب موقعك الخاص الان من مكتب احتراف</p>
                     </div>
 
