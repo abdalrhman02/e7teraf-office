@@ -88,6 +88,7 @@ function Rights() {
                             <img src={require('../../Images/rights-gallery/p3.jpeg')} />
                             <img src={require('../../Images/rights-gallery/p4.jpeg')} />
                             <img src={require('../../Images/rights-gallery/p5.jpeg')} />
+                            <img src={require('../../Images/rights-gallery/p6.jpeg')} />
                         </div>
                     </div>
                 </div>
