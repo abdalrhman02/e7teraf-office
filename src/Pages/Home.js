@@ -277,12 +277,10 @@ function Home() {
                             <p>اترك تفاصيلك و سوف نعود لك في اقرب وقت ممكن</p>
                         </div>
 
-                        <form action="https://formsubmit.co/mohamed96sh@gmail.com" method="POST">
-                            <input type="hidden" name="_captcha" value="false"></input>
-
+                        <form >
                             <div>
                                 <div>
-                                    <label>الاسم:</label>
+                                    <label>الاsسم:</label>
                                     <input type="text" name="الاسم" required placeholder='الاسم الكامل'></input>
                                 </div>
 
