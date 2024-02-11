@@ -280,7 +280,7 @@ function Home() {
                         <form >
                             <div>
                                 <div>
-                                    <label>الاsسم:</label>
+                                    <label>الاسم:</label>
                                     <input type="text" name="الاسم" required placeholder='الاسم الكامل'></input>
                                 </div>
 
