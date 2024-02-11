@@ -47,6 +47,34 @@ function Home() {
       }, []);
 
 
+    // Email Form
+    const emailForm = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        var params = {
+            name: document.querySelector('#name').value,
+            city: document.querySelector('#city').value,
+            phoneNumber: document.querySelector('#phone-number').value,
+            subject: document.querySelector('#subject').value,
+            msg: document.querySelector('#msg').value,
+        }
+    
+        emailjs
+        .send('service_r5mkijd', 'template_phm1fi8', params, {
+        publicKey: 'Xk4okWAmjROQuB51F',
+        })
+        .then(
+        () => {
+            console.log('SUCCESS!');
+        },
+        (error) => {
+            console.log('FAILED...', error.text);
+        },
+        );
+    };
+
     return (
         <>
             <div className="landing">
@@ -277,29 +305,29 @@ function Home() {
                             <p>اترك تفاصيلك و سوف نعود لك في اقرب وقت ممكن</p>
                         </div>
 
-                        <form >
+                        <form ref={emailForm} onSubmit={sendEmail}>
                             <div>
                                 <div>
                                     <label>الاسم:</label>
-                                    <input type="text" name="الاسم" required placeholder='الاسم الكامل'></input>
+                                    <input type="text" name="الاسم" id="name" required placeholder='الاسم الكامل'></input>
                                 </div>
 
                                 <div>
                                     <label>البلد:</label>
-                                    <input type="text" name="البلد" required placeholder='ادخل بلدك هنا'></input>
+                                    <input type="text" name="البلد" id="city" required placeholder='ادخل بلدك هنا'></input>
                                 </div>
                             </div>
 
                             <label>رقم الهاتف:</label>
-                            <input type="text" name="رقم الهاتف" required placeholder='سنتواصل معك من خلال الرقم'></input>
+                            <input type="text" name="رقم الهاتف" id="phone-number" required placeholder='سنتواصل معك من خلال الرقم'></input>
 
                             <label>الخدمات المطلوبة:</label>
-                            <input type="text" name="الخدمة المطلوبة" required placeholder='ما الخدمات التي ترغب بها؟'></input>
+                            <input type="text" name="الخدمة المطلوبة" id="subject" required placeholder='ما الخدمات التي ترغب بها؟'></input>
 
                             <label>رسالتك:</label>
-                            <textarea type="text" name="الرسالة" required placeholder='كيف نستطيع مساعدتك...'></textarea>
+                            <textarea type="text" name="الرسالة" id="msg" required placeholder='كيف نستطيع مساعدتك...'></textarea>
                             
-                            <button type="submit">ارسل</button>
+                            <button>ارسل</button>
                         </form>
                     </div>
                 </div>
