@@ -49,6 +49,7 @@ function Home() {
 
     // Email Form
     const emailForm = useRef();
+    const phoneInp = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -311,7 +312,6 @@ function Home() {
                                     <label>الاسم:</label>
                                     <input type="text" name="الاسم" id="name" required placeholder='الاسم الكامل'></input>
                                 </div>
-
                                 <div>
                                     <label>البلد:</label>
                                     <input type="text" name="البلد" id="city" required placeholder='ادخل بلدك هنا'></input>
@@ -319,7 +319,7 @@ function Home() {
                             </div>
 
                             <label>رقم الهاتف:</label>
-                            <input type="text" name="رقم الهاتف" id="phone-number" required placeholder='سنتواصل معك من خلال الرقم'></input>
+                            <input type="text" name="رقم الهاتف" id="phone-number" ref={phoneInp} required placeholder='سنتواصل معك من خلال الرقم'></input>
 
                             <label>الخدمات المطلوبة:</label>
                             <input type="text" name="الخدمة المطلوبة" id="subject" required placeholder='ما الخدمات التي ترغب بها؟'></input>

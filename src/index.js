@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 // Translation framework
-import './i18n';
+// import './i18n';
 
 // Pages
 import Home from './Pages/Home.js';
