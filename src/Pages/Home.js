@@ -63,7 +63,7 @@ function Home() {
         }
     
         emailjs
-        .send('service_ihf75t9', 'template_awt73ne', params, {
+        .send('service_ihf75t9', 'template_9cajrrq', params, {
         publicKey: 'o5viAeuYeVdo_KBpw',
         })
         .then(
