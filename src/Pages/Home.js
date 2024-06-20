@@ -63,8 +63,8 @@ function Home() {
         }
     
         emailjs
-        .send('service_r5mkijd', 'template_phm1fi8', params, {
-        publicKey: 'Xk4okWAmjROQuB51F',
+        .send('service_ihf75t9', 'template_awt73ne', params, {
+        publicKey: 'o5viAeuYeVdo_KBpw',
         })
         .then(
         () => {
@@ -310,22 +310,22 @@ function Home() {
                             <div>
                                 <div>
                                     <label>الاسم:</label>
-                                    <input type="text" name="الاسم" id="name" required placeholder='الاسم الكامل'></input>
+                                    <input type="text" name="الاسم" id="name" placeholder='الاسم الكامل' required></input>
                                 </div>
                                 <div>
                                     <label>البلد:</label>
-                                    <input type="text" name="البلد" id="city" required placeholder='ادخل بلدك هنا'></input>
+                                    <input type="text" name="البلد" id="city" placeholder='ادخل بلدك هنا' required></input>
                                 </div>
                             </div>
 
                             <label>رقم الهاتف:</label>
-                            <input type="text" name="رقم الهاتف" id="phone-number" ref={phoneInp} required placeholder='سنتواصل معك من خلال الرقم'></input>
+                            <input type="text" name="رقم الهاتف" id="phone-number" ref={phoneInp} placeholder='سنتواصل معك من خلال الرقم' required></input>
 
                             <label>الخدمات المطلوبة:</label>
-                            <input type="text" name="الخدمة المطلوبة" id="subject" required placeholder='ما الخدمات التي ترغب بها؟'></input>
+                            <input type="text" name="الخدمة المطلوبة" id="subject" placeholder='ما الخدمات التي ترغب بها؟' required></input>
 
                             <label>رسالتك:</label>
-                            <textarea type="text" name="الرسالة" id="msg" required placeholder='كيف نستطيع مساعدتك...'></textarea>
+                            <textarea type="text" name="الرسالة" id="msg" placeholder='كيف نستطيع مساعدتك...' required></textarea>
                             
                             <button>ارسل</button>
                         </form>
