@@ -68,7 +68,7 @@ function Home() {
         })
         .then(
         () => {
-            console.log('SUCCESS!');
+            window.location.reload();
         },
         (error) => {
             console.log('FAILED...', error.text);
